@@ -1,0 +1,22 @@
+.nav {
+    overflow: hidden;
+    background-color: rgb(42, 205, 255);
+}
+
+.nav a {
+    float: left;
+    color: #0d43f5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+h1{
+    color: blue;
+}
+img{
+    width: 330px;
+    height: 250px;
+    float:right;
+}

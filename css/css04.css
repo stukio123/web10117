@@ -1,0 +1,28 @@
+.solid-border{
+    border-style: solid;
+}
+
+.dashed-border{
+    border-style: dashed;
+}
+
+.dotted-border{
+    border-style: dotted;
+}
+
+.gray-background{
+    background-color: gray;
+}
+
+.red-border{
+    border-color :red;
+}
+
+.blue-border{
+    border-color: blue;
+}
+
+p{
+    padding: 2 2 2 2;
+}
+

@@ -1,0 +1,41 @@
+.nav {
+    overflow: hidden;
+    background-color: rgb(42, 205, 255);
+}
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:last-child{
+    float:right;
+}
+.shadow{
+    text-shadow: #999999 5px 5px 3px;
+    font-size: 23px;
+    color: yellow !important;
+}
+h1{
+    color:seagreen;
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(68, 159, 245);
+    color: white;
+    border-radius: 12px;
+    border-color: rgb(68,159,245);
+}
+button:hover{
+    background-color: red;
+}
+p{
+    font-weight: bold;
+}
+b{
+    color: seagreen;
+}
