@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-8.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title>Bài 8</title>
+</head>
+<body>
+    <div class="left">
+        <div class="border">
+            <span>Chọn</span>
+            <p>
+                <p>
+                    <input type="radio" id="normal" name="text" checked>
+                    <label for="normal">Chữ bình thường</label>
+                </p>
+                <p>
+                    <input type="radio" id="shadow" name="text" >
+                    <label for="shadow">Chữ có bóng</label>
+                </p>
+                <p>
+                    <label for="color">Chọn màu chữ: </label>
+                    <input type="color" value="#0000ff" id="color" onchange="color()">
+                </p>
+                <p>
+                    <input type="button" id="delete" value="Xóa phần tử cuối">
+                </p>
+            </p>
+        </div>
+
+        <div class="border">
+            <span>Click vào một chuỗi</span>
+            <p>
+                <ol>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                </ol>
+            </p>
+        </div>
+
+    </div>
+    <div class="right">
+        <div id="text">a</div>
+    </div>    
+    <script src="JS/script-8.js"></script>
+</body>
+</html>

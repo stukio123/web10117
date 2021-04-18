@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/css.css">
+
+</head>
+
+<body>
+    <div class="abc1">
+        <div>
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+            <div>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>Tên đăng nhập</td>
+                            <td> <input type="text" id="ten" name="ten" value="" required></td>
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu</td>
+                            <td> <input type="password" id="pass" name="pass" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>Ngày sinh</td>
+                            <td> <input type="date" id="ngaysinh" name="ngaysinh" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>Giới tính</td>
+                            <td>
+                                <input type="radio" id="c" name="gioitinh" value="nam">Nam
+                                <input type="radio" id="c1" name="gioitinh" value="nu">Nữ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Vấn đề bạn quan tâm</td>
+                            <td>
+                                <select name="sothich" id="sothich">
+                                    <option value="Kinh tế">Kinh tế</option>
+                                    <option value="Thể thao">Thể thao</option>
+                                    <option value="Văn học nghệ thuật">Văn học nghệ thuật</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Đăng ký" onclick="dangky()"></td>
+                            <td><input type="reset" value="Hủy"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            </br>
+            <div id="container">
+                <div id="a1"> </div>
+                <div id="a2"> </div>
+                <div id="a3"> </div>
+                <div id="a4"> </div>
+                <div id="a5"> </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="JS/js07.js"></script>
+
+</html>

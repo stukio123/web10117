@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/css.css">
+</head>
+
+<body>
+    <div class="abc1">
+        <div>
+            <h2>CÁC PHÉP TÍNH SỐ HỌC</h2>
+            <div>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td> Số thứ 1</td>
+                            <td> <input type="number" id="a" name="a" value=""></td>
+                        </tr>
+                        <tr>
+                            <td> Số thứ 2</td>
+                            <td> <input type="number" id="b" name="b" value=""></td>
+                        </tr>
+                        <tr>
+                            <td> Chọn phép toán</td>
+                            <td>
+                                <input type="radio" id="c" name="c" value="Cộng">Cộng</br>
+                                <input type="radio" id="c1" name="c" value="Trừ">Trừ</br>
+                                <input type="radio" id="c2" name="c" value="Nhân">Nhân</br>
+                                <input type="radio" id="c3" name="c" value="Chia">Chia</br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Thực hiện" onclick="thuchien('a','b','c')"></td>
+                            <td id="kq"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            </br>
+            <div id="container">
+                <div id="ten"> </div>
+                <div id="tuoi"> </div>
+                <div id="tuoi1"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS/js04.js"></script>
+
+</html>

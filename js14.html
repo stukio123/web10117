@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #noidung {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="noidung">
+        <h2>Lần lượt di chuyển con trỏ chuột lên hình và ra khỏi hình để xem hiệu ứng thay đổi hình </h2>
+        <img id="myImage" src="Image/off.gif" style="width:100px"
+            onmouseout="document.getElementById('myImage').src='Image/off.gif'"
+            onmouseover="document.getElementById('myImage').src='Image/on.gif'">
+    </div>
+
+
+</body>
+
+</html>

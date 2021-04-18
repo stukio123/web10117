@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+    background-color: #ddd;
+    padding: 15px;
+    font-size: 20px;
+}
+.active {
+    padding: 12.5px 30px;
+    font-size: 25px;
+    text-shadow: 0px 0px 15px white;
+    background-color: #5c5a5a;
+    font-weight: bolder;
+}

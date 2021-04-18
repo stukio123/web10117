@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/css.css">
+    
+</head>
+<body>
+    <div class="abc1">
+        <div>
+            <h1>Chương trình tính tuổi</h1>
+            <form action="#">
+                <table>
+                    <tr>
+                        <td> <label for="fname">Nhập vào tên của bạn:</label></td>
+                        <td> <input type="text" id="fname" name="fname" value=""></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="fnamsinh">Nhập vào năm sinh:</label></td>
+                        <td> <input type="number" id="fnamsinh" name="fnamsinh" value=""></td>
+                    </tr>
+                </table>
+                </br>
+                <input type="button" value="Tính tuổi" onclick="myFunction('fname','fnamsinh')">
+            </form>
+            <div id="container">
+                <div id="ten"> </div>
+                <div id="tuoi"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS/js01.js"></script>
+</html>

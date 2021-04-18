@@ -1,0 +1,28 @@
+#red {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: red;
+}
+#green {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: green;
+}
+#blue {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: blue;
+}
+#purple {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: purple;
+}
+
+div {
+    margin: 10px;
+}

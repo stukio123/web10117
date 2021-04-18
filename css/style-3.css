@@ -1,0 +1,26 @@
+table {
+    width: 50%;
+    margin: auto;
+}
+.menu {
+    width: 50%;
+    margin: auto;
+}
+th {
+    text-align: center;
+    padding: 8px;
+    border: black;
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+    text-align: left;
+    padding: 8px;
+}
+  
+tr {background-color: #f2f2f2}
+  
+
+h2 {
+      text-align: center;
+}

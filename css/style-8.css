@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.left {
+    float: left;
+    height: 100%;
+    width: 49.3%;
+    padding: 10px;
+    background-color: #FDAC53;
+}
+.right {
+    float: right;
+    height: 100%;
+    width: 49.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDAC53;
+}
+#text {
+    font-size: 100px;
+    color: #0000ff;
+    font-weight: bolder;
+}
+.border {
+    border: 1px solid; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+.border span { 
+    background-color: #FDAC53;
+    padding:0 10px;
+    margin: 0 0 0 20px;
+    font-size: 25px;
+}
+p {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+li {
+    color: black;
+    line-height: 1em;
+    padding: 10px 0 10px 30px;
+    font-size: 20px;
+}
+li:nth-child(odd) {
+    background-color: purple;
+}
+li:nth-child(even) {
+    background-color: aqua;
+}

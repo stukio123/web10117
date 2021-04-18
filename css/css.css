@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.abc {
+    padding: 20px;
+    margin: 100px auto;
+    border: 1px solid;
+    width: 350px;
+}
+td {
+    margin-right: 30px;
+}
+
+.abc1 {
+    padding: 20px;
+    margin: 100px auto;
+    border: 1px solid;
+    width: 600px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    /* background: #e8e8c4; */
+    width: 560px;
+}
+input#ten {
+    width: 200px;
+}
+/* bài 10 */
+div#bai10 {
+    margin-left: 100px;
+}
+/* bài 11 */
+#bai11 {
+    padding: 20px;
+    margin: 100px auto;
+    border: 1px solid;
+    width: 300px;
+}
+.xuly {
+    padding-left: 48px;
+}
+/* bài 15 */
+.a10 {
+    background-image: "Image/example.jpg";
+    width: 103px;
+    height: 77px;
+}
+
+.a25 {
+    background-image: "Image/example.jpg";
+    width: 256px;
+    height: 194px;
+}
+
+.a50 {
+    background-image: "Image/example.jpg";
+    width: 512px;
+    height: 384px;
+}
