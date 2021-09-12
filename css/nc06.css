@@ -1,0 +1,120 @@
+.header{
+    height: 180px;
+    background-color: green;
+}
+#title{
+    color: yellow;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 69px;
+    width: 300px;
+    padding-left: 565px;
+}
+#title:hover{
+    color: red;
+    font-size: xx-large;
+}
+.head_link {
+    height: 59px;
+    background-color: blue;
+    margin: 0px auto;
+    text-align: center;
+}
+#main_menu> ul>li {
+    list-style: none;
+    float: left;
+    padding: 18px 40px;
+    position: relative;
+}
+#main_menu> ul>#a{
+    padding-left: 475px;
+}
+#main_menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+.left{
+    background-color: green;
+    width: 170px;
+    height: 470px;
+    float: left;
+    
+}
+#link{
+    padding-top: 10px;
+}
+#link ul li {
+    padding: 10px;
+}
+.content{
+    float: left;
+    height: 470px;
+    width: 1163px;
+    background-color: burlywood;
+}
+.right{
+    float: left;
+    width: 170px;
+    height: 470px;
+    background-color: green;
+    
+}
+#name, #email, #amount, #date{
+    width: 200px;
+    
+}
+.label{margin-left: 45px;}
+#msg{
+    font-size: 18px;
+    text-align: center;
+    color: red;
+}
+#qc1, #qc2{
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 146px;
+    height: 100px;
+    background-color: sandybrown;
+    border-radius: 15px;
+    
+}
+#name{
+    margin-left: 400px;
+}
+#amount{
+    margin-left: 353px;
+}
+#email{
+    margin-left: 405px;
+}
+#date{
+    margin-left: 339px;
+}
+#pay{margin-left: 370px;}
+#btn{margin-left: 493px;}
+#footer{
+    background-color: blue;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    clear: both;
+}
+#box1, #box2, #box3{
+    width: 210px;
+    height: 210px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin: 25px 85px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+#total{
+    width: 90px;
+    height: 80px;
+    background-color: white;
+    margin-left: 45%;
+    text-align: center;
+}

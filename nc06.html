@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nc06.css"/>
+    
+</head>
+<body>
+    <!-- <form id="myform" action="" method="post" novalidate> -->
+        <header class="header">
+            <div id="title">TRÒ CHƠI QUAY SỐ</div>
+        </header>
+        <nav>
+            <div class="head_link">
+                <div id="main_menu">
+                    <ul>
+                        <li id="a"><a href="nc06.html">Trang Chủ</a></li>
+                        <li><a href="quayso.html">Trò chơi quay số</a></li>
+                        <li><a href="xucxac.html">Trò chơi quay xucxac</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="body">
+            <div class="left">
+                <div id="link">
+                    <ul>
+                        <li><a href="">C++</a></li>
+                        <li><a href="">PHP&MySQL</a></li>
+                        <li><a href="">XML</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">SQLServer</a></li>
+                        <li><a href="">ASP.NET</a></li>
+                        <li><a href="">Windows</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <h2 style="text-align: center;">Đăng ký mua hàng</h2>
+                <label for="name" class="label">Họ tên</label>
+                <input type="text" id="name" name="name" value="" placeholder="">
+                <br>
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" name="email" value="" placeholder="">
+                <br>
+                <label for="amount" class="label">Số lượng mua</label>
+                <input type="number" id="amount" name="amount" value="" placeholder="">
+                <br>
+                <label for="date" class="label">Ngày nhập hàng</label>
+                <input type="date" id="date" name="date" value="" placeholder="">
+                <br>
+                <label for="pay" class="label">Thanh toán</label>
+                <input type="radio" id="pay" name="pay" value="1" checked>
+                <label for="pay">Chuyển khoản</label>
+                <input type="radio" id="pay1" name="pay" value="2">
+                <label for="pay">Trực tiếp khi nhận hàng</label>
+                <br>
+                <button id="btn" type="submit" value="submit" onclick="btnSubmitclick();">Đăng ký mua</button>
+                <button type="reset" name="reset" value="reset" onclick="btnCancelclick();">Xóa</button>
+                <p id="msg"></p>
+            </div>
+            <div class="right">
+                <div id="qc1" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">Vùng quảng cáo 1</div>
+                <div id="qc2" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">Vùng quảng cáo 2</div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <div id="footer">
+                <h2 style="padding-top: 10px; color: white;">Bài thực hành ứng dụng web</h2>
+            </div>
+        </footer>
+    <!-- </form> -->
+    <script>
+         function btnCancelclick(){
+             document.getElementById("name").value = "";
+             document.getElementById("email").value = "";
+             document.getElementById("date").value = "";
+             document.getElementById("amount").value = "";
+             
+         }
+        function btnSubmitclick(){
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var amount = document.getElementById("amount");
+            var date = document.getElementById("date");
+            var msg ="";
+            var reg_email =/^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+
+            if(name.value==""){
+                msg += "Họ tên không được để trống. <br/>";
+            }
+            if(email.value != ""){
+                if(reg_email.test(email.value)==false){
+                    msg += "Email không hợp lệ.<br/>";
+                }
+            }else{
+                msg += "Email không được để trống.<br/>";
+            }
+            if(amount.value < 0 || amount.value == ""){
+                msg += "Số lượng không được để trống và phải lớn hơn 0.<br/>";
+            }
+            if(date.value == ""){
+                msg += "Ngày nhận hàng không được để trống.<br/>";
+            }
+            if (msg != ""){
+                document.getElementById("msg").innerHTML=msg+"\n";
+            }else{
+                document.getElementById("msg").innerHTML="Đăng ký thành công";
+            }
+        }
+    </script>
+</body>
+</html>

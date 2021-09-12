@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nc06.css"/>
+    
+</head>
+<body>
+    <!-- <form id="myform" action="" method="post" novalidate> -->
+        <header class="header">
+            <div id="title">TRÒ CHƠI QUAY SỐ</div>
+        </header>
+        <nav>
+            <div class="head_link">
+                <div id="main_menu">
+                    <ul>
+                        <li id="a"><a href="nc06.html">Trang Chủ</a></li>
+                        <li><a href="quayso.html">Trò chơi quay số</a></li>
+                        <li><a href="xucxac.html">Trò chơi quay xucxac</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="body">
+            <div class="left">
+                <div id="link">
+                    <ul>
+                        <li><a href="">C++</a></li>
+                        <li><a href="">PHP&MySQL</a></li>
+                        <li><a href="">XML</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">SQLServer</a></li>
+                        <li><a href="">ASP.NET</a></li>
+                        <li><a href="">Windows</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                
+                <div id="box1" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">
+
+                </div>
+                <div id="box2" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">
+
+                </div>
+                <div id="box3"style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">
+
+                </div>
+                
+                <input style="margin-left:45%; height: 35px; width: 90px;" type="button" value="Quay số" onclick="randomnumber1();"></input>
+                <div id="total" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">
+                </div>
+                
+            </div>
+            <div class="right">
+                <div id="qc1" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">Vùng quảng cáo 1</div>
+                <div id="qc2" style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;">Vùng quảng cáo 2</div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <div id="footer">
+                <h2 style="padding-top: 10px; color: white;">Bài thực hành ứng dụng web</h2>
+            </div>
+        </footer>
+    <!-- </form> -->
+    <script>
+        
+        function randomnumber1(){
+            let abc = 0;
+            var chars = "0123456789";
+            var string_length = 1;
+            var randomstring = '';
+            for (var i=0; i<string_length; i++) {
+                var rnum = Math.floor(Math.random() * chars.length);
+                randomstring += chars.substring(rnum,rnum+1);
+            }
+            abc += parseInt(randomstring);
+            document.getElementById("box1").innerHTML =randomstring;
+
+            var chars1 = "0123456789";
+            var string_length1 = 1;
+            var randomstring1 = '';
+            for (var i=0; i<string_length; i++) {
+                var rnum = Math.floor(Math.random() * chars.length);
+                randomstring1 += chars.substring(rnum,rnum+1);
+            }
+            
+            abc += parseInt(randomstring1)
+            document.getElementById("box2").innerHTML =randomstring1;
+
+            var chars2 = "0123456789";
+            var string_length2 = 1;
+            var randomstring2 = '';
+            for (var i=0; i<string_length; i++) {
+                var rnum = Math.floor(Math.random() * chars.length);
+                randomstring2 += chars.substring(rnum,rnum+1);
+            }
+            abc += parseInt(randomstring2);
+            document.getElementById("box3").innerHTML =randomstring2;
+
+            // var chars = "0123456789";
+            // var string_length = 1;
+            // var randomstring = '';
+            // for (var i=0; i<string_length; i++) {
+            //     var rnum = Math.floor(Math.random() * chars.length);
+            //     randomstring += chars.substring(rnum,rnum+1);
+            // }
+            
+            // total += randomstring;
+            document.getElementById("total").innerHTML =abc.toString();
+
+            return false;
+        }
+        // function randomnumber2(){
+        //     var chars = "0123456789";
+        //     var string_length = 1;
+        //     var randomstring = '';
+        //     for (var i=0; i<string_length; i++) {
+        //         var rnum = Math.floor(Math.random() * chars.length);
+        //         randomstring += chars.substring(rnum,rnum+1);
+        //     }
+            
+        //     total += randomstring;
+        //     document.getElementById("box2").innerHTML =randomstring;
+        //     return false;
+        // }
+        // function randomnumber3(){
+        //     var chars = "0123456789";
+        //     var string_length = 1;
+        //     var randomstring = '';
+        //     for (var i=0; i<string_length; i++) {
+        //         var rnum = Math.floor(Math.random() * chars.length);
+        //         randomstring += chars.substring(rnum,rnum+1);
+        //     }
+            
+        //     total += randomstring;
+        //     document.getElementById("total").innerHTML =total;
+        //     return false;
+        // }
+        // function total(){
+        //     // document.getElementById("total").innerHTML = 'a';
+        //     // return false;
+            
+        //     var chars = "0123456789";
+        //     var string_length = 1;
+        //     var randomstring = '';
+        //     for (var i=0; i<string_length; i++) {
+        //         var rnum = Math.floor(Math.random() * chars.length);
+        //         randomstring += chars.substring(rnum,rnum+1);
+        //     }
+            
+        //     total += randomstring;
+        //     document.getElementById("box3").innerHTML =randomstring;
+        //     return false;
+        
+        // }
+    </script>
+</body>
+</html>

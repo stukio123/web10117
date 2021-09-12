@@ -1,0 +1,9 @@
+#frame {
+    border: 1px solid #e8f595;
+    background-color: #b0d4d2;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-right: 400px;
+    height: 620px;
+    position: relative;
+}
